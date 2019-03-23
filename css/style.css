@@ -94,11 +94,13 @@ section#hero .container {
     padding-top:40px;        
 }
 
-.site-header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+@media only screen and (min-width: 768px){ 
+    .site-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .site-name {
@@ -114,7 +116,14 @@ section#hero .container {
 }
 
 nav.site-nav {
+    display: none;
     margin-left: auto;
+}
+
+@media only screen and (min-width: 768px){
+    nav.site-nav {
+        display: flex;
+    }
 }
 
 nav.site-nav ul {
@@ -182,35 +191,51 @@ nav.site-nav ul .contact-me {
 section#about {
     background-color: #383838;
     background-image: linear-gradient(rgba(28,28,28,.82),rgba(28,28,28,.82)), url('../img/shattered.png');
-    background-repeat: repeat-x;
+    background-repeat: repeat;
 }
 
-section#about .container {
-    display: flex;
-    flex-direction: row;
+.about-pic  {
+    text-align: center;    
 }
 
-.about-pic {
+@media only screen and (min-width: 992px) {
+    section#about .container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .about-pic {
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
+    }
+    
+    .about-content {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
+
 
 .about-pic .about-img {
     border-radius: 100%;
     border:1px solid #C1B283;
 }
 
-.about-content {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.about-content h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-.about-content h2 {
-    margin-bottom: 30px;
+@media only screen and (min-width: 992px) { 
+    .about-content h2 {
+        text-align: left;
+        margin-top: 0;
+    }
 }
 
 .about-content p {
@@ -231,7 +256,7 @@ section#skills {
 
 section#skills .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .skills-content {
@@ -239,15 +264,27 @@ section#skills .container {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width:50%;    
+    width:100%;    
 }
 
 .skills-content h2 {
     margin-bottom: 30px;
 }
 
-.skills-content p {
-    padding-right: 70px;    
+
+@media only screen and (min-width: 992px) {
+    
+    section#skills .container {
+        display: flex;
+        flex-direction: row;
+    }
+    .skills-content {
+        width: 50%;
+    }
+    
+    .skills-content p {
+        padding-right: 70px;
+    }
 }
 
 .skills-icons {
@@ -265,7 +302,16 @@ section#skills .container {
 }
 
 .skills-rating {
-    width:50%;
+    margin-top:40px;
+    width:100%;
+}
+
+@media only screen and (min-width:992px) {
+    .skills-rating {
+        margin-top:0;
+        width:50%;
+    }
+
 }
 
 .skills-rating p {
@@ -322,19 +368,31 @@ section#portfolio h2 span {
 .thumbnails-wrapper {
     margin-top: 40px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
 }
 
 .project-thumbnails {
+    margin-bottom :30px;
     align-self: center;
-    width:30%;
+    width:80%;
 }
 
-.project-thumbnails:nth-child(2) {
-    margin: 0 42px;
+@media only screen and (min-width:768px) {
+    .project-thumbnails {
+        margin-bottom: 0;
+        align-self: center;
+        width:30%;
+    }
+    
+    .thumbnails-wrapper {
+        flex-direction: row;
+    }
+    
+    .project-thumbnails:nth-child(2) {
+        margin: 0 42px;
+    }
 }
-
 
 /*FOOTER*/
 
@@ -392,4 +450,25 @@ section#copyright .social-icons i{
 section#copyright .social-icons i:hover {
     color: #C1B283;
     transition: 0.3s;
+}
+
+/* BURGER NAV */
+.nav-burger {
+    color: #383838;
+    display: block;
+    position:absolute;
+    font-size: 36px;
+    top: 32px;
+    right:20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-burger {
+        display: none;
+    }
+}
+
+nav.mobile-nav .nav-overlay {
+    display: none;
+    overflow: hidden;
 }
