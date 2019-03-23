@@ -1,7 +1,7 @@
 $(document).ready(function() {
     
     var pbAlreadyLoaded = false;
-
+  
     $('.skills-rating').waypoint(function(direction){
         if (!pbAlreadyLoaded) {
             progressBar('.inner-meter.html5', 85);
@@ -72,6 +72,12 @@ $(document).ready(function() {
           }
         }
       });
+    
+    // mobile menu toggle 
+    $('.toggle').click(function() {
+      $('.toggle').toggleClass('toggle-active');
+      $('#overlay').toggleClass('nav-active');
+    });
     
     
 //    
