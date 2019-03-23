@@ -1,7 +1,7 @@
 $(document).ready(function() {
-    
+
     var pbAlreadyLoaded = false;
-  
+
     $('.skills-rating').waypoint(function(direction){
         if (!pbAlreadyLoaded) {
             progressBar('.inner-meter.html5', 85);
@@ -16,8 +16,8 @@ $(document).ready(function() {
         offset : '100%'
     });
 
-    
-    
+
+
     function progressBar(elem, maxRate){
 //        var pbClassName = targetClass;
         var elem = $(elem);
@@ -33,7 +33,7 @@ $(document).ready(function() {
             }
         }
     }
-    
+
     // smooth scroll on target click
     // using https://css-tricks.com/snippets/jquery/smooth-scrolling/
     // Select all links with hashes
@@ -44,8 +44,8 @@ $(document).ready(function() {
       .click(function(event) {
         // On-page links
         if (
-          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-          && 
+          location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+          &&
           location.hostname == this.hostname
         ) {
           // Figure out element to scroll to
@@ -67,47 +67,15 @@ $(document).ready(function() {
               } else {
                 $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
                 $target.focus(); // Set focus again
-              };
+              }
             });
           }
         }
       });
-    
-    // mobile menu toggle 
+
+    // mobile menu toggle
     $('.toggle').click(function() {
       $('.toggle').toggleClass('toggle-active');
       $('#overlay').toggleClass('nav-active');
     });
-    
-    
-//    
-//    $('.inner-meter html5').waypoint(function(direction){
-//        $('inner-meter html5');
-//    }, {
-//        offset : '70%'
-//    });
-    
-//    new WOW().init();
-//    
-//    $('.burger-nav').on('click', function(){
-//        $('.container nav ul').toggleClass('open');
-//    });
-//    
-//    // animate the whole div
-//    $('.js-wp-2').waypoint(function(direction) {
-//        $('.js-wp-2').addClass('animated slideInUp');
-//    } , {
-//        offset: '70%'
-//    });
-//    
-//    $('.js-wp-3').waypoint(function(direction) {
-//        $('.js-wp-3').addClass('animated fadeIn');
-//    } , {
-//        offset: '70%'
-//    });
-//    
-//    $('.iphone-btn').delay(2300).animate({bottom: "+=-3"}, 300);
-//    $('.iphone-btn').delay(300).animate({top: "+=-3"}, 100);
 });
-
-
