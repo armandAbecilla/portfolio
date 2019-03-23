@@ -19,7 +19,9 @@ html {
 }
 
 .flex-spacer {
-    flex:1;
+    -webkit-box-flex:1;
+        -ms-flex:1;
+            flex:1;
 }
 
 /*GLOBAL STYLES*/
@@ -643,12 +645,14 @@ section#copyright .social-icons i:hover {
     background-color: #fff;
 }
 .toggle-active .top {
+    transform: translateY(6px) translateX(0) rotate(45deg);
     -webkit-transform: translateY(6px) translateX(0) rotate(45deg);
 }
 .toggle-active .middle {
    opacity: 0;
 }
 .toggle-active .bottom {
+    transform: translateY(-12px) translateX(0) rotate(-45deg);
     -webkit-transform: translateY(-12px) translateX(0) rotate(-45deg);
 }
 
@@ -662,6 +666,7 @@ section#copyright .social-icons i:hover {
     height: 0;
     visibility: hidden;
     opacity: 0;
+    transition: opacity .35s, visibility .35s, height .35s;
     -webkit-transition: opacity .35s, visibility .35s, height .35s;
     z-index:1;
 }
