@@ -126,7 +126,7 @@ section#hero .container {
         align-items: center;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .site-name {
@@ -369,6 +369,7 @@ section#skills .container {
         -ms-flex-direction: row;
         flex-direction: row;
     }
+
     .skills-content {
         width: 50%;
     }
@@ -561,7 +562,7 @@ section#copyright .container {
     align-items: center;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 section#copyright .social-icons {
@@ -592,7 +593,6 @@ section#copyright .social-icons i:hover {
 
     section#copyright .social-icons {
         margin-top:0;
-/*        margin-left: auto;*/
     }
 }
 
@@ -708,8 +708,8 @@ section#copyright .social-icons i:hover {
     .nav-burger {
         display: none;
     }
-}
 
-nav.mobile-nav .nav-overlay {
-    overflow: hidden;
+    nav.mobile-nav {
+        display: none;
+    }
 }
