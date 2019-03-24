@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var pbAlreadyLoaded = false;
 
-    $('.skills-rating').waypoint(function(direction){
+    $('.skills__rating').waypoint(function(direction){
         if (!pbAlreadyLoaded) {
             progressBar('.inner-meter.html5', 85);
             progressBar('.inner-meter.photoshop', 70);
@@ -80,5 +80,5 @@ $(document).ready(function() {
     });
 
     // Lity lightbox
-    $('.project-thumbnails').attr('data-lity', '');
+    $('.portfolio__images').attr('data-lity', '');
 });
