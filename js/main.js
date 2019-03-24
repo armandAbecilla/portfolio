@@ -78,4 +78,7 @@ $(document).ready(function() {
       $('.toggle').toggleClass('toggle-active');
       $('#overlay').toggleClass('nav-active');
     });
+
+    // Lity lightbox
+    $('.project-thumbnails').attr('data-lity', '');
 });

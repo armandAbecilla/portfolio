@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile device optimized -->
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/lity.min.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700|Muli:300,400" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css">
@@ -15,7 +16,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
         <![endif]-->
-        
     </head>
     <body>
         <section id="hero">
@@ -32,7 +32,7 @@
                             <li><a href="#portfolio">Portfolio</a></li>
                             <li><a class="contact-me btn-primary" href="mailto:abecilla.paularmand@gmail.com">Contact Me</a></li>
                         </ul>
-                    </nav>   
+                    </nav>
                     <!-- Mobile hidden nav -->
                     <nav class="mobile-nav overlay">
                         <div class="nav-burger toggle" id="toggle">
@@ -46,13 +46,13 @@
                             <li><a href="#portfolio" class="toggle">Portfolio</a></li>
                             <li><a href="mailto:abecilla.paularmand@gmail.com" class="toggle">Contact Me</a></li>
                         </ul>
-                    </nav>                                 
+                    </nav>
                 </div>
                 <div class="hero-content">
                     <h1 class="cta">Hi. I’m Paul Armand M. Abecilla</h1>
                     <p>Web Designer / Developer</p>
                     <a href="#portfolio" class="button-cta">View My Portfolio</a>
-                </div>    
+                </div>
             </div>
         </section>
         <section id="about">
@@ -72,7 +72,7 @@
             <div class="container">
                 <div class="skills-content">
                     <h2>Skills</h2>
-                    <p class="mg-bot-20">I’m a web designer / front end developer with more than 3 years of 
+                    <p class="mg-bot-20">I’m a web designer / front end developer with more than 3 years of
                     work experience in creating websites, from website mockup using Adobe Photoshop up to making them ‘alive’ on the internet. And yes, they are responsive as well.</p>
                     <p>Check out my portfolio below to view my most recent projects.</p>
                     <div class="skills-icons">
@@ -118,9 +118,9 @@
             <div class="container">
                 <h2>Recent <span>Projects</span></h2>
                 <div class="thumbnails-wrapper">
-                    <img src="img/thumbnail-1.jpg" alt="Garage Door Company sample" class="project-thumbnails">
-                    <img src="img/thumbnail-2.jpg" alt="Automotive template sample" class="project-thumbnails">
-                    <img src="img/thumbnail-3.jpg" alt="Construction sample template" class="project-thumbnails">
+                    <img src="img/thumbnail-1.jpg" alt="Garage Door Company sample" class="project-thumbnails" data-lity-target="img/project1.png">
+                    <img src="img/thumbnail-2.jpg" alt="Automotive template sample" class="project-thumbnails" data-lity-target="img/project2.png">
+                    <img src="img/thumbnail-3.jpg" alt="Construction sample template" class="project-thumbnails" data-lity-target="img/project3.png">
                 </div>
             </div>
         </section>
@@ -128,7 +128,7 @@
             <section id="quote">
                 <div class="container">
                     <h3>“Have no fear of perfection—you’ll never reach it.”</h3>
-                    <p>–Salvador Dali</p>                 
+                    <p>–Salvador Dali</p>
                 </div>
             </section>
             <section id="copyright">
@@ -144,10 +144,11 @@
                 </div>
             </section>
         </section>
-        
+
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
         <script type="text/javascript" src="js/wow.min.js"></script>
+        <script src="js/lity.min.js" charset="utf-8"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
