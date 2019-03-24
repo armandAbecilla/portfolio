@@ -484,6 +484,7 @@ section#portfolio h2 span {
     -ms-flex-item-align: center;
     align-self: center;
     width:80%;
+    cursor: pointer;
 }
 
 @media only screen and (min-width:768px) {
